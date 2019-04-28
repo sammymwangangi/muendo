@@ -23,7 +23,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" style="font-size: 4rem" href="{{ url('/') }}">
+                    <img src="{{asset('images/logo.jpg')}}" width="100" height="100" class="d-inline-block align-top rounded-circle" alt="">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -50,7 +51,7 @@
                             @endif
                         @else
                             <li class="nav-item">      
-                                <a class="nav-link" href="{{ route('plans.index') }}">{{ __('Plans') }}</a>
+                                <a class="nav-link" href="{{ route('plans.index') }}">{{ __('Apartments') }}</a>
                             </li>
                             <li class="nav-item">      
                                 <a class="nav-link" href="{{ route('logout') }}"

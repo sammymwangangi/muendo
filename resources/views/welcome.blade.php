@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    RENT PAYMENT
+                    KING RENT
                 </div>
 
                 {{-- <div class="links">

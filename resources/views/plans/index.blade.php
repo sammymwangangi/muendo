@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card shadow-lg border-0 mb-5 bg-white rounded">
-                <div class="card-header bg-info text-white font-weight-bold">Plans</div>
+                <div class="card-header bg-info text-white font-weight-bold">Apartments</div>
                 <div class="card-body">
                     <ul class="list-group">
                         @foreach($plans as $plan)

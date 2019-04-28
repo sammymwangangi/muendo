@@ -7,10 +7,14 @@ use App\Plan;
 
 class PlanController extends Controller
 {
-    public function index()
+    public function index(Plan $plan, Request $request)
 	{
         $plans = Plan::all();
-        return view('plans.index', compact('plans'));
+        if($request->user()->subscribedToPlan($plan->stripe_plan, 'main')) {
+            return view('plans.show', compact('plan'));
+        }else{
+           return view('plans.index', compact('plans')); 
+       }
 	}
 
 	public function show(Plan $plan, Request $request)

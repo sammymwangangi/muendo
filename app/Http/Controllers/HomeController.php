@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $invoices = $user->invoices();
+        
         return view('home');
     }
 }
